@@ -15,3 +15,11 @@ console.log(titleCase("I'm a little tea pot"));
 
 // Improved version
 
+const titleCase = (string) => {
+  return string
+    .split(" ")
+    .map(word => word[0].toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+};
+
+console.log(titleCase("I'm a little tea pot"));
